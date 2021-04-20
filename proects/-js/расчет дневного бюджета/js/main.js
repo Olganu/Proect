@@ -10,7 +10,7 @@ let startBtn = document.getElementById('start'),
 
     expensesItem = document.querySelectorAll('.expenses-item'),
     expensesBtn = document.getElementsByTagName('button')[0],
-    optionalExpensesBtn = document.getElementsByTagName('button')[1],
+    optionalexpensesBtn = document.getElementsByTagName('button')[1],
     countBtn = document.getElementsByTagName('button')[2],
     optionalexpensesItem = document.querySelectorAll('.optionalexpenses-item'),
     incomeItem = document.querySelector('.choose-income'),
@@ -71,7 +71,7 @@ expensesBtn.addEventListener('click', function () {
 
 });
 
-optionalExpensesBtn.addEventListener('click', function () {
+optionalexpensesBtn.addEventListener('click', function () {
     for (let i = 0; i < optionalexpensesItem.length; i++) {
         let opt = optionalexpensesItem[i].value;
         appData.optionalExpenses[i] = opt;
